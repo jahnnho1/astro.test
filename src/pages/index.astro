@@ -9,16 +9,16 @@ const allPosts = await Astro.glob("../content/tips/*.md");
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<Header title="Testeo de Astro" />
+		<Header title="AstroBuild.tips" />
 		<Hero />
 		<ul role="list" class="link-card-grid">
 			{
 				allPosts.map((item) => (
 					<Card
-						title={item?.frontmatter.title}
-						time={item?.frontmatter.pubDate}
-						tags={item?.frontmatter.tags}
-						slug={item?.frontmatter.slug}
+						title={item?.frontmatter?.title}
+						time={item?.frontmatter?.pubDate}
+						tags={item?.frontmatter?.tags}
+						slug={item?.frontmatter?.slug}
 					/>
 				))
 			}
@@ -31,7 +31,6 @@ const allPosts = await Astro.glob("../content/tips/*.md");
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
-		background: white;
 	}
 
 	.link-card-grid {

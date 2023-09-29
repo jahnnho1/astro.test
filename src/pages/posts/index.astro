@@ -13,15 +13,15 @@ console.log(posts);
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<Header title="Testeo de Astro" />
+		<Header title="AstroBuild.tips" />
 		<Hero />
 		<ul role="list" class="link-card-grid">
 			{
 				posts.map((post) => (
 					<Card
-						title={post?.data.title}
-						time={post?.data.pubDate}
-						tags={post?.data.tags}
+						title={post.data.title}
+						time={post.data.pubDate}
+						tags={post.data.tags}
 						slug={post.slug}
 					/>
 				))
@@ -35,7 +35,6 @@ console.log(posts);
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
-		background: white;
 	}
 
 	.link-card-grid {
