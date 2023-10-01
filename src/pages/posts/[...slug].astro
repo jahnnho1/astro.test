@@ -1,6 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import Post from "../../layouts/Post.astro";
+import Base from "../../layouts/Base.astro";
+
 
 export async function getStaticPaths() {
 	const posts = await getCollection("tips");
@@ -15,4 +17,8 @@ const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<Post content="Content" />
+<Base title="Astrobuild.tips">
+	<Content />
+
+</Base>
+

@@ -2,9 +2,9 @@
 title: "Hello Astro"
 pubDate: 2024-05-07
 description: "Hey, this is my first description for the hello world md"
-image:
+image: "https://api.lorem.space/image/fashion?w=640&h=480&r=3027"
 tags: ["astro", "javascript"]
-layout: 
+layout: "../../layouts/Post.astro"
 ---
 
 Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".
